@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ffcs.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 申请使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 申请获取序列号的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 定位相关权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.LOCATION" >
+    </uses-permission>
+    <!-- 连接互联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-library android:name="com.google.android.maps" />
+
+    <application
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name" >
+        <activity android:name=".FirstActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GridLayoutActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ffcs.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".Photograph_Sys"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ShowImageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".ResultActivity"></activity>
+    </application>
+
+</manifest>

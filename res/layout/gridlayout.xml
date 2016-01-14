@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/container">
+<RelativeLayout
+    android:id="@+id/container_gridview"
+
+    android:orientation="vertical" 
+
+     android:layout_width="fill_parent" 
+
+     android:layout_height="fill_parent" 
+     android:background="@drawable/bg"
+     
+     android:padding="10dip" 
+      
+
+     >  
+<com.ffcs.grid.DragGridView  
+
+        android:id="@+id/gridview"  
+
+        android:layout_width="fill_parent"  
+
+       android:layout_height="wrap_content" 
+
+        android:cacheColorHint="#00000000" 
+
+        android:numColumns="3" 
+         
+        android:drawSelectorOnTop="false"
+        
+        android:listSelector="@drawable/grid_selector"
+
+        android:stretchMode="columnWidth" 
+
+        android:verticalSpacing="5dip" 
+
+         android:horizontalSpacing="25dip" 
+         
+         android:gravity="center"/> 
+     
+
+</RelativeLayout> 
+<RelativeLayout android:layout_width="fill_parent"
+        android:background="@drawable/bg" android:id="@+id/container_2"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+        <ImageView android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@drawable/bg" />
+</RelativeLayout>
+</RelativeLayout>

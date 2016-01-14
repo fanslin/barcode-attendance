@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 该文件是FirstActivity.java所使用的布局文件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="30dip"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="经纬度："
+         />
+
+    <ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<EditText  
+				android:id="@+id/View"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:editable="false"
+			    android:lines="8"
+			    android:cursorVisible="false"
+			    android:inputType="text"/>										<!-- 声明一个ScrollView控件 -->
+		</ScrollView>	
+
+</LinearLayout>

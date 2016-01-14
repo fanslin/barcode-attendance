@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 该文件是FirstActivity.java所使用的布局文件 -->
+<AbsoluteLayout android:id= "@+id/container_first"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/b"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:weightSum="1">
+    <Button  android:id="@+id/btn_saomiao"
+    android:text="@string/btn_saomiao"
+   android:layout_y= "322dip" 
+   android:layout_x= "60dip" 
+   android:layout_height= "55dip" 
+   android:layout_width= "70dip">
+       </Button> 
+    <Button android:id="@+id/btn_exit" 
+           android:text="@string/btn_exit" 
+android:layout_y= "322dip" 
+android:layout_x= "135dip" 
+android:layout_height= "55dip" 
+android:layout_width= "70dip">
+     </Button>
+
+</AbsoluteLayout>
